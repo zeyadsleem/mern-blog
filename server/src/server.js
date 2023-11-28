@@ -73,8 +73,6 @@ app.post("/api/articles/:name/add-comment", async (req, res) => {
     res.status(200).json(updatedArticleInfo);
   });
 });
-
-app.listen(8000, () => console.log("Server is listening on port 8000"));
 app.post("/api/articles/:name/comments", async (req, res) => {
   const { name } = req.params;
   const { postedBy, text } = req.body;
@@ -87,6 +85,4 @@ app.post("/api/articles/:name/comments", async (req, res) => {
   }
 });
 
-app.listen(8001, () => {
-  console.log("server is listening on port 8001");
-});
+app.listen(8000, () => console.log("Server is listening on port 8000"));
