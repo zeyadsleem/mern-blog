@@ -1,101 +1,101 @@
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 nav {
-  background-color: #333;
-  padding: 10px;
+    background-color: #333;
+    padding: 10px;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 li {
-  display: inline-block;
-  margin-right: 20px;
+    display: inline-block;
+    margin-right: 20px;
 }
 
 a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-  font-size: 16px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 a:hover {
-  color: hsl(30, 85%, 50%)
+    color: hsl(30, 85%, 50%);
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-  margin: 30px 0 10px;
+    font-size: 3.2em;
+    line-height: 1.1;
+    margin: 30px 0 10px;
 }
 
 p {
-  font-size: 16px;
-  line-height: 1.6;
-  padding: 10px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 10px 0;
 }
 
 article {
-  margin-top: 10px;
-  padding: 20px 5px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    padding: 20px 5px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .error {
-  display: flex;
-  height: 70vh;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
+    display: flex;
+    height: 70vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {
-  body {
-    grid-template-columns: 1fr;
-  }
+    body {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #eeeeee;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  a{
-  color: #444;
-  }
-  nav{
-    background-color: #F88379;
-  }
-  article{
-    color: black;
-  }
+    :root {
+        color: #213547;
+        background-color: #eeeeee;
+    }
+    a:hover {
+        color: #747bff;
+    }
+    a {
+        color: #444;
+    }
+    nav {
+        background-color: #f88379;
+    }
+    article {
+        color: black;
+    }
 }
